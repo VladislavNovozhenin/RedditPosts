@@ -1,0 +1,87 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  min-width: 200px;
+  min-height: 160px;
+  max-width: 100%;
+  padding: 24px;
+  margin-bottom: 25px;
+}
+
+.content {
+  overflow-y: auto;
+}
+
+.close {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  margin: -24px;
+  color: #000
+}
+
+.previewImg {
+  width: 100%;
+}
+
+.title {
+  font-size: 14px;
+  margin: 0;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.titleContainer {
+  display: flex;
+}
+
+.titleContainerRight {
+  padding: 5px 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contentDescr {
+  font-size: 12px;
+  margin: 0;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--greyEC);
+}
+
+.menuContainer {
+  display: none;
+}
+
+
+@media all and (min-width: 1024px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .contentDescr {
+    font-size: 14px;
+  }
+}
+
+
+@media all and (min-width: 1440px) {
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

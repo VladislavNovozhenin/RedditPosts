@@ -1,0 +1,31 @@
+
+  .textContent {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+  }
+  .textContent > * + * {
+    padding: 7px 0 0;
+  }
+  
+  @media all and (min-width: 1024px) {
+    .textContent {
+      flex-basis: 540px;
+      order: 1;
+      margin: 0 0 0 38px;
+      flex-flow: column-reverse nowrap;
+      justify-content: center;
+      align-items: normal;
+    }
+    .textContent > * {
+      flex: 0 0;
+    }
+  }
+  
+  @media all and (min-width: 1540px) {
+    .textContent {
+      flex-basis: 672px;
+    }
+  }
+  
+  

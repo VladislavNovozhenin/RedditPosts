@@ -1,0 +1,9 @@
+.up path {
+    fill: #C4C4C4;
+}
+
+@media all and (min-width: 1540px) {
+    .up:hover>svg>path {
+        fill: var(--green);
+    }
+}

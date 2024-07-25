@@ -1,0 +1,5 @@
+.username {
+    color: var(--orange);
+    position: relative;
+    z-index: 1;
+  }

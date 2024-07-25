@@ -1,0 +1,12 @@
+.menuItemsList {
+    display: none;
+}
+
+@media all and (min-width: 1200px) {
+    .menuItemsList {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

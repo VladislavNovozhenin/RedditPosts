@@ -1,0 +1,10 @@
+.down path {
+    fill: #C4C4C4;
+}
+
+@media all and (min-width: 1540px) {
+  
+.down:hover > svg > path {
+      fill: var(--orange);
+    }
+  }
